@@ -5,6 +5,7 @@ Thumbs.db
 .gradle
 build/
 out/
+docker-data/
 micronaut-cli.yml
 .mvn/
 mvnw
