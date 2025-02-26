@@ -90,10 +90,12 @@
     <logger name="org.mongodb" level="warn"/>
     <logger name="io.greptime" level="warn"/>
     <logger name="org.apache.kafka" level="warn"/>
+    <logger name="org.apache.hertzbeat" level="debug"/>
 
     <!-- Production environment configuration -->
     <springProfile name="prod">
         <root level="INFO">
+            <appender-ref ref="ConsoleAppender"/>
             <appender-ref ref="SystemOutFileAppender"/>
             <appender-ref ref="ErrOutFileAppender"/>
         </root>

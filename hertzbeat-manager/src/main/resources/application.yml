@@ -84,7 +84,10 @@ spring:
       eclipselink:
         logging:
           level: info
-
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
   flyway:
     enabled: true
     clean-disabled: true
